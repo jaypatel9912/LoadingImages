@@ -1,7 +1,4 @@
 
-**Project Name**
-
-*Loading Images.*
 
 **Description**
 
