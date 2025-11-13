@@ -15,7 +15,7 @@ fun <T> Flow<T>.catchInternal(action: suspend FlowCollector<T>.(Err<ApiException
     catch { error ->
         Log.d("TAG", "catchInternal: Error data Fetch ${error.cause}")
         if (error is ConnectException || error is SocketTimeoutException || error is UnknownHostException) {
-            action(Err(ApiException.Internal(error.cause,error.message)))
+            action(Err(ApiException.Internal(error.cause, error.message)))
         } else {
             action(Err(ApiException.Internal(error.cause, error.message)))
         }

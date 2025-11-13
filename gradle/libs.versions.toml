@@ -1,20 +1,21 @@
 [versions]
-agp = "8.3.2"
-koinAndroid = "3.5.0"
-koinAndroidxCompose = "3.5.0"
-koinCoreJvm = "3.5.0"
-koin-ktor = "3.3.0"
-kotlin = "1.9.23"
-coreKtx = "1.12.0"
+agp = "8.13.1"
+koinAndroid = "4.1.1"
+koinAndroidxCompose = "4.1.1"
+koinCoreJvm = "4.1.1"
+koin-ktor = "4.1.1"
+kotlin = "2.2.21"
+composeCompiler = "2.2.21"
+coreKtx = "1.17.0"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-kotlinxSerializationJson = "1.6.0"
-lifecycleRuntimeKtx = "2.7.0"
-activityCompose = "1.8.2"
-composeBom = "2024.04.00"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+kotlinxSerializationJson = "1.9.0"
+lifecycleRuntimeKtx = "2.9.4"
+activityCompose = "1.11.0"
+composeBom = "2025.11.00"
 kotlin-result = "1.1.17"
-ktor = "2.2.4"
+ktor = "3.3.2"
 
 
 [libraries]
@@ -32,6 +33,7 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinAndroid" }
 koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinAndroidxCompose" }
 koin-core-jvm = { module = "io.insert-koin:koin-core-jvm", version.ref = "koinCoreJvm" }
@@ -54,4 +56,4 @@ ktor = ["ktor-core", "ktor-logging", "ktor-android", "ktor-content-negotiation",
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "composeCompiler" }
